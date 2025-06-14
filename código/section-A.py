@@ -49,7 +49,7 @@ def Union():
 
 union_list = Union() # Guardo el retorno de la función Union para utilizarla más tarde
 
-# Operación Interseccion ( A  )
+# Operación Interseccion ( A ∩ B )
 def Interseccion(): # Se utiliza una lista filtrada para guardar elementos que se encuentran tanto en la lista A como en B
     filtered = [] # Lista filtrada
     for e in union_list: # Recorremos el retorno de la funcion Union porque contiene elementos únicos y nos sirve para utilizarlos en la comparación
@@ -126,7 +126,7 @@ print(f"Union = {union_list}") # Muestra la unión de dos conjuntos
 print(f"Intersección = {Interseccion()}") # Muestra la intersección de dos conjuntos
 print(f"Diferencia ( A - B ) = {Diferencia(dniA_list, dniB_list)}") # Muestra la diferencia entre dos conjuntos (A - B)
 print(f"Diferencia ( B - A ) = {Diferencia(dniB_list, dniA_list)}") # Muestra la diferencia entre dos conjuntos (B - A)
-print(f"Diferencia simétrica ( A  B ) = {DiferenciaSimetrica(union_list,dniA_list, dniB_list)}") # Muestra la diferencia simétrica entre dos conjuntos
+print(f"Diferencia simétrica = {DiferenciaSimetrica(union_list,dniA_list, dniB_list)}") # Muestra la diferencia simétrica entre dos conjuntos
 # En el primer argumento mandamos la unión de los conjuntos para sólo consultar los elementos únicos
 
 print("#### Evaluación de operaciones entre conjuntos vinculadas con expresiones ####")
